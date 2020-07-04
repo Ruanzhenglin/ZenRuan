@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'read_process.apps.ReadProcessConfig',
     'home.apps.HomeConfig',
     'dna_pod.apps.DnaPodConfig',
     'django.contrib.admin',
@@ -121,3 +122,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# media files
+MEDIA_ROOT = '/home/zen/workspace/python-dev/django_web/ZenRuan'
+
+MEDIA_URL = '/media/'

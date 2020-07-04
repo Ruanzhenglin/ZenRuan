@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('read_process/', include('read_process.urls')),
     path('dna_pod/', include('dna_pod.urls')),
     path('home/', include('home.urls')),
     path('admin/', admin.site.urls),

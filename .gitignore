@@ -1,3 +1,3 @@
 .vscode*
-zr_env*
+*zr_env*
 db.sqlite3*

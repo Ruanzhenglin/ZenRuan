@@ -1,0 +1,9 @@
+<p>Welcome to DNA's world!</p>
+<form action="/read_process/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+{% load static %}
+{{ results | safe }}
+<!-- <img src="{% static "read_process/barHist.png" %}" alt="Hist bar of qualities">  -->
